@@ -14,6 +14,9 @@
 		5F23B0F02771C04300DD9C43 /* Movie_Quotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F23B0EE2771C04300DD9C43 /* Movie_Quotes.xcdatamodeld */; };
 		5F23B0F22771C04E00DD9C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F23B0F12771C04E00DD9C43 /* Assets.xcassets */; };
 		5F23B0F52771C04E00DD9C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F23B0F32771C04E00DD9C43 /* LaunchScreen.storyboard */; };
+		5F23B0FD2771CA3A00DD9C43 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23B0FC2771CA3800DD9C43 /* CollectionViewCell.swift */; };
+		5F23B1002771D5AD00DD9C43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5F23B0FF2771D5AD00DD9C43 /* Kingfisher */; };
+		5F23B1022771E59800DD9C43 /* quotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23B1012771E59500DD9C43 /* quotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		5F23B0F12771C04E00DD9C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F23B0F42771C04E00DD9C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F23B0F62771C04E00DD9C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F23B0FC2771CA3800DD9C43 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5F23B1012771E59500DD9C43 /* quotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F23B1002771D5AD00DD9C43 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,8 @@
 				5F23B0F32771C04E00DD9C43 /* LaunchScreen.storyboard */,
 				5F23B0F62771C04E00DD9C43 /* Info.plist */,
 				5F23B0EE2771C04300DD9C43 /* Movie_Quotes.xcdatamodeld */,
+				5F23B0FC2771CA3800DD9C43 /* CollectionViewCell.swift */,
+				5F23B1012771E59500DD9C43 /* quotesView.swift */,
 			);
 			path = "Movie Quotes";
 			sourceTree = "<group>";
@@ -86,6 +94,9 @@
 			dependencies = (
 			);
 			name = "Movie Quotes";
+			packageProductDependencies = (
+				5F23B0FF2771D5AD00DD9C43 /* Kingfisher */,
+			);
 			productName = "Movie Quotes";
 			productReference = 5F23B0E22771C04300DD9C43 /* Movie Quotes.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 5F23B0D92771C04100DD9C43;
+			packageReferences = (
+				5F23B0FE2771D5AA00DD9C43 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5F23B0E32771C04300DD9C43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F23B0FD2771CA3A00DD9C43 /* CollectionViewCell.swift in Sources */,
 				5F23B0EA2771C04300DD9C43 /* ViewController.swift in Sources */,
 				5F23B0F02771C04300DD9C43 /* Movie_Quotes.xcdatamodeld in Sources */,
+				5F23B1022771E59800DD9C43 /* quotesView.swift in Sources */,
 				5F23B0E62771C04300DD9C43 /* AppDelegate.swift in Sources */,
 				5F23B0E82771C04300DD9C43 /* SceneDelegate.swift in Sources */,
 			);
@@ -362,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F23B0FE2771D5AA00DD9C43 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F23B0FF2771D5AD00DD9C43 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F23B0FE2771D5AA00DD9C43 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5F23B0EE2771C04300DD9C43 /* Movie_Quotes.xcdatamodeld */ = {
